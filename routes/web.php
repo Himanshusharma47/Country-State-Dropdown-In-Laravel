@@ -18,3 +18,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/display-data', [IController::class , 'display_data']);
+Route::post('/getstate', [IController::class , 'getstate']);
+Route::post('/getcity', [IController::class , 'getcity']);
