@@ -18,6 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// Blade file url
 Route::get('/display-data', [IController::class , 'display_data']);
 Route::post('/getstate', [IController::class , 'getstate']);
 Route::post('/getcity', [IController::class , 'getcity']);
